@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores de Futebol de 2014</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>10 Jogadores de Futebol Notáveis de 2014</h1>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="player-list">
+            <li>
+                <h2>1. Lionel Messi</h2>
+                <p><strong>Clube:</strong> FC Barcelona</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Argentina</p>
+            </li>
+            <li>
+                <h2>2. Cristiano Ronaldo</h2>
+                <p><strong>Clube:</strong> Real Madrid</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Portugal</p>
+            </li>
+            <li>
+                <h2>3. Neymar Jr.</h2>
+                <p><strong>Clube:</strong> FC Barcelona</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Brasil</p>
+            </li>
+            <li>
+                <h2>4. Manuel Neuer</h2>
+                <p><strong>Clube:</strong> Bayern de Munique</p>
+                <p><strong>Posição:</strong> Goleiro</p>
+                <p><strong>País:</strong> Alemanha</p>
+            </li>
+            <li>
+                <h2>5. Thomas Müller</h2>
+                <p><strong>Clube:</strong> Bayern de Munique</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Alemanha</p>
+            </li>
+            <li>
+                <h2>6. Arjen Robben</h2>
+                <p><strong>Clube:</strong> Bayern de Munique</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Países Baixos</p>
+            </li>
+            <li>
+                <h2>7. James Rodríguez</h2>
+                <p><strong>Clube:</strong> AS Monaco</p>
+                <p><strong>Posição:</strong> Meio-campista</p>
+                <p><strong>País:</strong> Colômbia</p>
+            </li>
+            <li>
+                <h2>8. Andrea Pirlo</h2>
+                <p><strong>Clube:</strong> Juventus</p>
+                <p><strong>Posição:</strong> Meio-campista</p>
+                <p><strong>País:</strong> Itália</p>
+            </li>
+            <li>
+                <h2>9. Sergio Agüero</h2>
+                <p><strong>Clube:</strong> Manchester City</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>País:</strong> Argentina</p>
+            </li>
+            <li>
+                <h2>10. Paul Pogba</h2>
+                <p><strong>Clube:</strong> Juventus</p>
+                <p><strong>Posição:</strong> Meio-campista</p>
+                <p><strong>País:</strong> França</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
 
