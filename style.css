@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -23,7 +23,7 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-    background: #0066cc;
+    background: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -38,40 +38,74 @@ header h1 {
     margin: 0;
 }
 
-/* Lista de jogadores */
-.player-list {
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Estilo para a seção principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo para a informação do jogo */
+.game-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-info img.game-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.game-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.game-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo para os recursos do jogo */
+.features {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.features ul {
     list-style: none;
     padding: 0;
 }
 
-.player-list li {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.player-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.player-list h2 {
-    font-size: 1.8em;
-    color: #0066cc;
+.features li {
+    font-size: 1.2em;
+    color: #555;
     margin-bottom: 10px;
 }
 
-.player-list p {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-}
-
-/* Estilos adicionais */
-strong {
-    color: #333;
+/* Estilo para o rodapé */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
 }
