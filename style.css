@@ -1,111 +1,153 @@
-/* Reset básico para margem e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo para o corpo da página */
+/* Fontes e cores */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0c0c0c;
+    color: #e0e0e0;
+    overflow-x: hidden;
 }
 
-/* Container principal para centralizar o conteúdo */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+header.hero {
+    position: relative;
+    background-image: url('red-dead-redemption-2-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* Estilo do cabeçalho */
-header {
-    background: #540000;
-    color: #ffffff;
-    padding: 20px;
+header.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header.hero .hero-content {
+    z-index: 1;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
+    max-width: 700px;
+    animation: fadeInDown 2s ease-out;
 }
 
-header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
+header.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
     margin: 0;
 }
 
-header p {
-    font-size: 1.2em;
+header.hero p {
+    font-size: 1.5rem;
     margin-top: 10px;
 }
 
-/* Estilo para a seção principal */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Estilo para a informação do jogo */
-.game-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.game-info img.game-image {
+nav {
+    position: absolute;
+    bottom: 20px;
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
-.game-info h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.game-info p {
-    font-size: 1em;
-    color: #666;
-}
-
-/* Estilo para os recursos do jogo */
-.features {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.features h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.features ul {
+nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.features li {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 10px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Estilo para o rodapé */
-.footer {
-    background: #540000;
-    color: #ffffff;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181818;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 30px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-block .text {
+    max-width: 50%;
+}
+
+.content-block .image {
+    max-width: 40%;
+}
+
+.content-block img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.content-block:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.content-block:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
     text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    border-top: 1px solid #333;
 }
