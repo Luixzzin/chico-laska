@@ -5,36 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Dead Redemption 2</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
             <h1>Red Dead Redemption 2</h1>
-            <p>Aventuras no Velho Oeste</p>
+            <p>Uma jornada épica pelo Velho Oeste</p>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#graphics">Gráficos</a></li>
+                <li><a href="#story">História</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <section class="main-content">
-            <div class="game-info">
-                <img src="https://wallpapers.com/images/hd/red-dead-redemption-2-4k-mountains-4slr3bog13hpocqm.jpg">
+
+    <main>
+        <section id="about" class="content-block">
+            <div class="text">
                 <h2>Sobre o Jogo</h2>
-                <p><strong>Red Dead Redemption 2</strong> é um jogo de ação e aventura desenvolvido pela Rockstar Games. Lançado em outubro de 2018, o jogo se passa no final do século XIX, no final da Era do Velho Oeste nos Estados Unidos. O jogador controla Arthur Morgan, um fora da lei que faz parte da gangue Van der Linde.</p>
-                <p>O jogo é a sequência de Red Dead Redemption e é conhecido por seu mundo aberto vasto e detalhado, narrativa envolvente e mecânicas de jogo realistas. Red Dead Redemption 2 foi aclamado pela crítica e é considerado um dos melhores jogos de todos os tempos.</p>
+                <p>Red Dead Redemption 2 é uma obra-prima do mundo dos games, desenvolvido pela Rockstar Games. Vivencie o Velho Oeste americano no final do século XIX, enquanto acompanha a vida de Arthur Morgan, um fora-da-lei com um código moral único.</p>
             </div>
-            <div class="features">
-                <h2>Principais Recursos</h2>
-                <ul>
-                    <li>Mundo aberto expansivo e detalhado</li>
-                    <li>História imersiva com escolhas do jogador</li>
-                    <li>Interação realista com NPCs e ambiente</li>
-                    <li>Variedade de missões e atividades secundárias</li>
-                    <li>Gráficos impressionantes e trilha sonora envolvente</li>
-                </ul>
-            </div>
-            <div class="footer">
-                <p>&copy; 2024 Jogos Aclamados. Todos os direitos reservados.</p>
+            <div class="image">
+                <img src="about.jpg" alt="Sobre o Jogo">
             </div>
         </section>
-    </div>
+
+        <section id="graphics" class="content-block reverse">
+            <div class="text">
+                <h2>Gráficos Incríveis</h2>
+                <p>Com gráficos de tirar o fôlego, Red Dead Redemption 2 transporta você para um mundo aberto imersivo, onde cada detalhe é cuidadosamente criado para proporcionar uma experiência visual inigualável.</p>
+            </div>
+            <div class="image">
+                <img src="graphics.jpg" alt="Gráficos Incríveis">
+            </div>
+        </section>
+
+        <section id="story" class="content-block">
+            <div class="text">
+                <h2>História Imersiva</h2>
+                <p>O jogo não é apenas visualmente deslumbrante, mas também possui uma narrativa profunda, repleta de personagens complexos e momentos emocionantes que prendem o jogador do início ao fim.</p>
+            </div>
+            <div class="image">
+                <img src="story.jpg" alt="História Imersiva">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Página de Fãs de Red Dead Redemption 2. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
