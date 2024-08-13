@@ -24,7 +24,7 @@ body {
 /* Estilo do cabeçalho */
 header {
     background: #333;
-    color: #fff;
+    color: #940000;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -103,7 +103,7 @@ header p {
 /* Estilo para o rodapé */
 .footer {
     background: #333;
-    color: #fff;
+    color: #940000;
     text-align: center;
     padding: 10px;
     border-radius: 8px;
